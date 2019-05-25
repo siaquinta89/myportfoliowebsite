@@ -7,22 +7,42 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Stefania Iaquinta WebSite</title>
 </head>
-    <body>
+    <body class='about'>
         <div class="container">
             <header>
                 <nav>
-                    <h1>Stefania Iaquinta</h1>
-                        <div class="date">Web Design</div>
+                    <h1>About</h1>
                 </nav>
             </header>
             <section>
-                <p>test</p>
-            </section>
+                <div class="dropdown">
+                    <button onclick="myBirthday()" class="dropbtn">1989</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <p>My Birthday!</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button onclick="myCourses()" class="dropbtn">Courses</button>
+                    <div id="myDropdown-2" class="dropdown-content">
+                        <p> <span style="font-size:15px";>IFOA</span><strong></br>Graphic Designer </strong></p>
+                        <p> <span style="font-size:15px";>NUOVO CESCOT BOLOGNA </span> <strong> </br>Web Developer </strong> </p>
+                        
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button onclick="myJobs()" class="dropbtn">Jobs</button>
+                    <div id="myDropdown-3" class="dropdown-content">
+                        <p> <span style="font-size:15px";>RCF S.p.A.</span><strong></br>Graphic Designer Junior </strong></p>
+                        <p> <span style="font-size:15px";>DOCOMO DIGITAL</span> <strong> </br>Front-End Developer Junior</strong> </p>
+                    </div>
+                </div>
         
+            </section>
+            <footer>
+                <!-- <img src="img/nojoy.svg" alt="img_joy"> -->
+                <p>&copy; 2019 Stefania Iaquinta</p>
+            </footer>
         </div>
-
-        <footer>
-            
-        </footer>
+        <script src="index.js"></script>
     </body>
 </html>

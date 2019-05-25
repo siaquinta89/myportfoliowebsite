@@ -23,15 +23,17 @@ body{
     font-family: "RetroGaming";
     font-weight: normal;
     font-style: normal;
-    background: #000;
+    background: #1e1e1e;
     display: flex;
     flex-direction: column;
 }
 
 .container {
-    flex: 1 0 auto;
-    padding: 10px;
-    padding-top: 20px;
+    display: table;
+	table-layout: fixed;
+	height: 100vh;
+    width: 100%;
+    margin: 10px 0px;
 }
 
 footer{
@@ -61,10 +63,6 @@ nav {
 }
 
 section {
-    display: flex;
-    justify-content: center;
-    height: 35vh;
-    align-items: center;
     margin-top: 50px;
 }
 .side-left {
@@ -80,9 +78,11 @@ input[type="text"] {
 }
 
 footer {
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
+    display: table-row;
+	height: 50px;
+	clear: both;
+	min-height: 100px;
+	padding: 5px;
 }
 
 .music-player {
@@ -114,11 +114,13 @@ ul#myUL {
 }
 
 li.test-about,li.test-works, li.test-contacts  {
-    background: white;
+    background: transparent;
     width: 60%;
     padding: 10px;
     margin: 10px;
-    display:none;
+    border: 2px solid #fcfc17;
+    list-style-type:none;
+    
 }
 
 img.search-icon {
@@ -128,22 +130,15 @@ img.search-icon {
     top: 50%;
     margin-top: -15px;
 }
-li a{
-    color: black;
+
+li a {
+    color: #fff;
+    list-style-type: none;
+    text-decoration: none;
 }
 
-ul li:hover{
-    background:#e56b9e;
-}
-ul li a:hover{
-    background: transparent;
-}
-ul li a:active{
-    background: transparent;
-}
-ul li a:visited{
-    background: transparent;
-}
+
+
 
 input#search-value {
     font-family: "RetroGaming";
@@ -154,3 +149,63 @@ input#search-value {
     font-size: 18px;
 }
 
+footer p{
+    text-align: center;
+}
+
+
+/*ABOUT*/
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+  }
+
+.dropdown-content p {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 22px;
+}
+
+.about .show {
+    font-family: Arial;
+    background: transparent;
+    /* display: block; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.about .show p {
+    text-align: center;
+}
+
+
+.about .dropdown {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about button {
+    font-family: "RetroGaming";
+    font-weight: normal;
+    font-style: normal;
+    background: transparent;
+    width: 60%;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #fcfc17;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
