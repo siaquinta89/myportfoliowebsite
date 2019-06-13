@@ -28,6 +28,10 @@ function myCourses() {
 function myJobs() {
   document.getElementById("myDropdown-3").classList.toggle("show");
 }
+
+function myBachelor() {
+  document.getElementById("myDropdown-4").classList.toggle("show");
+}
   
   // Close the dropdown menu if the user clicks outside of it
   window.onclick = function(event) {

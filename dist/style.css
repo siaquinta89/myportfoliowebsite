@@ -26,6 +26,7 @@ body{
     background: #1e1e1e;
     display: flex;
     flex-direction: column;
+    padding: 0px 30px;
 }
 
 .container {
@@ -34,6 +35,10 @@ body{
 	height: 100vh;
     width: 100%;
     margin: 10px 0px;
+}
+
+header{
+    padding: 0px 0px 30px 0px;
 }
 
 footer{
@@ -60,10 +65,11 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 10px;
 }
 
 section {
-    margin-top: 50px;
+    margin:20px 0px;
 }
 .side-left {
     width: 100%;
@@ -156,6 +162,14 @@ footer p{
 
 /*ABOUT*/
 
+nav{
+    flex-direction: column;
+    align-items: center;
+}
+
+.about h1, .works h1, .contacts h1{
+    padding: 0px;
+}
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
@@ -201,7 +215,7 @@ footer p{
     font-weight: normal;
     font-style: normal;
     background: transparent;
-    width: 60%;
+    width: 70%;
     padding: 10px;
     margin: 10px;
     border: 2px solid #fcfc17;
@@ -223,13 +237,11 @@ footer p{
 .box {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin: 50px 10px;
+    justify-content:flex-start;
+    padding: 20px 20px 20px 0px;
 }
 
 .title {
-    padding: 15px;
-    /* cursor: pointer; */
     cursor: pointer;
 }
 
@@ -237,7 +249,7 @@ footer p{
     text-transform: uppercase;
     color: #fff;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .imagine_pacman_blue{
@@ -247,4 +259,106 @@ footer p{
     background-size: contain;
     background-repeat: no-repeat;
 }
-    
+
+.second{
+    font-size: 15px;
+}
+
+.contacts section{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts a{
+    padding: 20px;
+    text-align: center;
+    text-decoration: underline;
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.icon{
+    background: url('img/home.svg');
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.navbar a{
+    padding-top: 10px;
+}
+
+.dropdown p span{
+    font-size: 15px;
+    font-weight: 100;
+}
+
+/*MEDIA QUERIES */
+
+@media only screen and (min-width: 768px){
+
+    .title a{
+        font-size: 35px; 
+    }
+    .imagine_pacman{
+        width: 70px;
+        height: 70px;
+    }
+
+    .icon{
+        width: 60px;
+        height: 60px;
+    }
+
+    h1{
+        font-size: 60px;
+    }
+
+    .dropdown-content p{
+        font-size: 35px;
+    }
+
+    .dropdown p span {
+        font-size: 20px;
+    }
+
+    .about button{
+        font-size: 35px;
+    }
+
+    li a{
+        font-size: 35px;
+    }
+
+    .side-left li{
+        width: 40%;
+    }
+
+    .date {
+        font-size: 35px;
+    }
+
+    .about button{
+        width: 43%;
+    }
+
+    .contacts a{
+        font-size: 35px;
+    }
+
+    .navbar{
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    }
+
+
+}
+
+
+
+
